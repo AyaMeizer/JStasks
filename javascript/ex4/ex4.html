@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex4: Formatting text</title>
+</head>
+<style>
+    body{
+        font-family: cursive;
+    }
+    div{
+        border: solid black 1px;
+        width: 600px;
+        height: auto;
+        padding: 1rem;
+        margin: 1rem 0rem;
+    }
+</style>
+<body>
+    <form action="select">
+        <select name="select" id="font1">
+            <option  value="selectfont" >select font family</option>
+            <option  value="Arial" >Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Courier New" >Courier New</option>
+          </select>
+          <select name="fontsize" id="fontsize">
+            <option value="defult">select font size</option>
+            <option value="12px">12px</option>
+            <option value="18px">18px</option>
+            <option value="22px">22px</option>
+          </select>
+          <input onclick="italic()" type="checkbox" id="italic">
+          <label for="italic">italic</label>
+          <input onclick="bold" type="checkbox" id="bold">
+          <label for="bold">bold</label>
+          <input onclick="underline()" type="checkbox" id="underline">
+          <label for="underline">underline</label>
+      </form>
+      
+      <div id="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptatum dolores placeat amet aliquam quasi expedita quaerat quis architecto autem culpa, maiores ea animi ad voluptas ut laboriosam dicta a?</div>
+</body>
+</html> 
+<script src="ex4.js"></script>
